@@ -1,0 +1,15 @@
+{
+  "name": "my-site",
+  "version": "1.0.0",
+  "description": "Hugo blog site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "markdownlint 'content/**/*.md' --fix"
+  },
+  "devDependencies": {
+    "markdownlint": "^0.31.1"
+  },
+  "author": "Audry Hsu",
+  "license": "ISC"
+}

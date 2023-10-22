@@ -9,6 +9,7 @@ hugo list drafts
 hugo
 ```
 ### Linting
+- This project uses `markdownlint` [CLI](https://github.com/igorshubovych/markdownlint-cli) tool to lint markdown files
 ```bash
 markdownlint 'content/**/*.md' --fix
 ```
