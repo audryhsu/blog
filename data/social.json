@@ -1,0 +1,14 @@
+{
+  "links": [
+    {
+      "name": "github",
+      "url": "https://github.com/audryhsu",
+      "image": "images/social/github.svg"
+    },
+    {
+      "name": "linkedin",
+      "url": "https://www.linkedin.com/in/audry-hsu/",
+      "image": "images/social/linkedin.svg"
+    }
+  ]
+}
