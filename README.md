@@ -4,6 +4,12 @@
 hugo server --buildDrafts
 ```
 
+## Updating themes
+```bash
+# pull in any new changes from the theme
+git submodule update --remote
+```
+
 # Deployment
 - make sure the `deployment.targets` section in `hugo.toml` is configured
 1. Build the site
