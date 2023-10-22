@@ -1,13 +1,13 @@
 :root {
   --font-family-heading: Poppins;
-  --font-family-paragraph: Helvetica;
+  --font-family-paragraph: Poppins;
   --font-family-monospace: monospace;
-  --base-color: #ffffff;
+  --base-color: #FFFCF2;
   --base-offset-color: #eaeaea;
-  --highlight-color: #7b16ff;
-  --heading-color: #1c1b1d;
-  --text-color: #4e5157;
-  --dot-color: #7b16ff; }
+  --highlight-color: #97C0D8;
+  --heading-color: #131B2A;
+  --text-color: #131B2A;
+  --dot-color: #F2A07D; }
 
 body, html {
   margin: 0;

@@ -3,12 +3,9 @@ title: "How to Hugo"
 date: 2023-10-21T17:15:08-07:00
 description: A meta post about Hugo basics and how I used Hugo to create this website.
 image: 
-draft: true
-tags:
-- hugo
-- blogging
+tags: ["hugo", "blogging"]
 ---
-# overview of hugo site folder structure
+# Overview of Hugo site folder structure
 
 ```
 my-site/
@@ -29,19 +26,25 @@ my-site/
 |── themes/       <-- downloaded prebuild templates (git submodule)
 └── hugo.toml     <-- hugo site settings
 ```
+
 ### Themes
-- downloaded prebuild templates as git submodules
+
 - I'm using [Hugo Winston](https://themes.gohugo.io/hugo-winston-theme/) theme
 
 ### Content
+
 - directory structure under this folder creates the site's url pathing
-- each subdir gets a list page automatically created
+- the directory structure matters and should model the organization of the site
 
 # Types of content
-**List pages** lists other available pages (rendered via list.html)
-- Home page is a list page, because it lists other pages on the site
-- Section pages list other pages in the same section
-**Single pages** display information about a topic (rendered via single.html)
+
+There are two main content page types:
+
+1. **List pages** lists other available pages (rendered via list.html templates)
+   - Home page is a list page, because it lists other pages on the site
+   - Section pages list other pages in the same section
+2. **Single pages** display information about a topic (rendered via single.html templates)
+
 ```
 ├── content/
 │   └── posts/   <----- top level section
@@ -52,57 +55,65 @@ my-site/
 │      └── favorite-quote.md
 
 ```
+
 ## Special files and folders
+
 - A **section** is a top-level content directory, or any content directory with an _index.md file.
 - [_index.md](https://gohugo.io/content-management/organization/#index-pages-_indexmd): is a list page where you can define parameters and configurations in the front matter for an entire _section_
-    - not meant to be rendered
-    - note that a list template is automatically created for top-level sections, but adding a `_index.md` file allows you to override and inject more custom content and configurations
-    - Hugo recommends creating an `_index.md` file for every section
-  - not to be confused with `index.md`
-    - a content "landing" page for a section which can tell a user what the section is about
+  - not meant to render content
+  - note that a list page is automatically created for top-level sections (`/content/quots`), but adding a `_index.md` file allows you to override and inject more custom content and configurations
+  - Hugo recommends creating an `_index.md` file for every section, too
+- not to be confused with `index.md`, which is a content "landing" page for a section which can tell a user what the section is about
 
 There are functional differences between sections and non-sections (content sub-directories without an _index.md):
+
 | | Section | Non-section |
 | --- | --- | --- |
-|Directory names become URL segments|	✔️|	✔️|
-|Have logical ancestors and descendants|✔️|	❌|
-|Have list pages|✔️|	❌|
+|Directory names become URL segments| ✔️| ✔️|
+|Have logical ancestors and descendants|✔️| ❌|
+|Have list pages|✔️| ❌|
 
 # Archetypes
-- "templates" for front matter
+
+- effectively "templates" for front matter
 - can create archetypes specific to a content directory by naming archetype file the same name as the directory
-    - `archetypes/posts.md` is the front matter template for new pages in `/posts/` directory
+- `archetypes/posts.md` is the front matter template for new pages in `/posts/` directory
 
 # Short codes
-use cases: embedding youtube videos, twitter posts, etc.
-- can add in predefined html snippets so you don't have to paste in html code
-- can create your own shortcodes
+
+- Shortcodes are reusable snippets of HTML and are often used for embedding youtube videos, twitter posts, etc.
+- you can create your own shortcodes
+
 ```
 # example shortcode
 {{< youtube id_of_youtube_video >}}
 ```
-see Hugo shortcodes [here](https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes)
+
+- See Hugo predefined shortcodes [here](https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes)
 
 # Taxonomies
-Two default taxonomies: tags and categories
 
-### Tags
-- add categories or tags inside an array in a markdown file's front matter
-- Hugo automatically creates a taxonomy list page for each tag and category (rendered by a list template)
+There are two default taxonomies: tags and categories
 
-### custom taxonomy
-- you can create a custom taxonomy by addint it to front matter
+- you can add categories or tags to a markdown file by adding the tag or category in a markdown file's front matter
+- Hugo automatically creates a taxonomy list page for each tag and category (rendered as a list template)
+
+### Custom taxonomy
+
+- you can create a custom taxonomy by adding it to front matter of any markdown file
+
 ```yaml
 ---
 title: i feel good
 mood: ["happy"]
 ---
 ```
+
 - Hugo will **not** automatically create a page for custom taxonomies
-    - `/content/moods/happy` will be 404 not found unless you configure it inside the `hugo.toml`
+  - trying to navigate to `/content/moods/happy` will return a 404 not found unless you add the custom taxonomy to the `hugo.toml`
 
 ```toml
-# add all taxonomies to the array, including the default ones. Use singular = "plural" format.
+# add all taxonomies, including the default ones. Use singular = "plural" format.
 [taxonomies]
   tag = "tags"
   category = "categories"

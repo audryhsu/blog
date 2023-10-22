@@ -2,21 +2,21 @@
 ```yaml
 # start development server with file watcher
 hugo server --buildDrafts
-```
 
-## Updating themes
+# check for drafts
+hugo list drafts
+# build site in /public/ folder
+hugo
+```
+### Linting
+```bash
+markdownlint 'content/**/*.md' --fix
+```
+### Updating themes
 ```bash
 # pull in any new changes from the theme
 git submodule update --remote
 ```
 
 # Deployment
-- make sure the `deployment.targets` section in `hugo.toml` is configured
-1. Build the site
-```
-# build site in /public/ folder
-hugo
-
-# deploy to a target listed in hugo.toml config like an S3 bucket
-hugo deploy --target=<target_name>
-```
+This site is currently deployed via Github Actions to a repository Github Pages site on every push to the `main` branch

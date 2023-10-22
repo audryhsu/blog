@@ -15,7 +15,7 @@ pygmentsUseClasses = true
 
 [params]
   google_analytics_id = ""
-  twitter_handle = "@zerostaticio"
+#  twitter_handle = "@zerostaticio"
   showAuthorOnHomepage = true
   showAuthorOnPosts = false
   showIntroContentOnHomepage = true
@@ -25,16 +25,16 @@ pygmentsUseClasses = true
   sortPostsByDateOldestFirst = false
   addDot = true
   addFrame = true
-  highlightColor = '#7b16ff'
-  baseColor = "#ffffff"
+  highlightColor = '#97C0D8' # border and links
+  baseColor = "#FFFCF2" # background
   baseOffsetColor = "#eaeaea"
-  headingColor = "#1c1b1d"
-  textColor = "#4e5157"
-  dotColor = "#7b16ff"
+  headingColor = "#131B2A"
+  textColor = "#131B2A"
+  dotColor = "#F2A07D"
   enableGoogleFonts = true 
   googleFontsUrl = "https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
   fontFamilyHeading = "Poppins"
-  fontFamilyParagraph = "Helvetica"
+  fontFamilyParagraph = "Poppins"
   fontFamilyMonospace = "monospace"
 
 # markdown config settings https://gohugo.io/getting-started/configuration-markup/#goldmark
