@@ -1,4 +1,5 @@
-# Development Workflow
+This is the repository for my personal blog generated with Hugo.
+## Development Workflow
 ```yaml
 # start development server with file watcher
 hugo server --buildDrafts
@@ -19,5 +20,5 @@ markdownlint 'content/**/*.md' --fix
 git submodule update --remote
 ```
 
-# Deployment
-This site is currently deployed via Github Actions to a repository Github Pages site on every push to the `main` branch
+## Deployment
+This site is currently deployed via GitHub Actions to a repository Github Pages site on every push to the `main` branch
