@@ -5,10 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "markdownlint 'content/**/*.md' --fix"
+    "lint": "markdownlint 'content/**/*.md' --fix",
+    "dev": "hugo server --buildDrafts"
   },
   "devDependencies": {
-    "markdownlint": "^0.31.1"
+    "markdownlint": "^0.31.1",
+    "write-good": "^1.0.8"
   },
   "author": "Audry Hsu",
   "license": "ISC"

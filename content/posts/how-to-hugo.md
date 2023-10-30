@@ -1,10 +1,15 @@
 ---
-title: "How to Hugo"
+title: "How I made this site using Hugo in one day"
 date: 2023-10-21T17:15:08-07:00
-description: A meta post about Hugo basics and how I used Hugo to create this website.
+lastmod: 2023-10-30T17:15:08-07:00
+description: A meta post about key Hugo concepts and how I used Hugo and GitHub to create this website.
 image: 
-tags: ["hugo", "blogging"]
+tags: ["hugo", "blogging", "github"]
 ---
+This is a meta post about key Hugo concepts and how I used Hugo to quickly and (relatively) painlessly create this website in less than 24 hours. I've never used Hugo or any static site generator before, and as I was taking notes to get a grasp on how Hugo worked, I thought this would be the perfect pilot blog post 🙃.
+
+After all, I'm here to learn in public, aren't I? Maybe you'll get something out of this too.
+
 # Overview of Hugo site folder structure
 
 ```
@@ -103,8 +108,9 @@ There are two default taxonomies: tags and categories
 - you can create a custom taxonomy by adding it to front matter of any markdown file
 
 ```yaml
+# content/posts/i-feel-good.md
 ---
-title: i feel good
+title: i feel good today!
 mood: ["happy"]
 ---
 ```
@@ -113,6 +119,7 @@ mood: ["happy"]
   - trying to navigate to `/content/moods/happy` will return a 404 not found unless you add the custom taxonomy to the `hugo.toml`
 
 ```toml
+# hugo.toml
 # add all taxonomies, including the default ones. Use singular = "plural" format.
 [taxonomies]
   tag = "tags"

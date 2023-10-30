@@ -36,6 +36,8 @@ pygmentsUseClasses = true
   fontFamilyHeading = "Poppins"
   fontFamilyParagraph = "Poppins"
   fontFamilyMonospace = "monospace"
+  # access to Git variables: https://gohugo.io/variables/git/#lastmod
+  enableGitInfo= true
 
 # markdown config settings https://gohugo.io/getting-started/configuration-markup/#goldmark
 [markup]
@@ -78,4 +80,3 @@ order = [".jpg$", ".gif$", ".png$", ".svg$"]
   [[deployment.targets]]
     name = "GitHub"
     URL = ""
-
