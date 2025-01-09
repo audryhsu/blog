@@ -6,45 +6,14 @@
     <description>Recent content in Writing is thinking on Audry Hsu</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 07 Aug 2019 00:00:00 +0000</lastBuildDate><atom:link href="audryhsu.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 21 Oct 2023 17:15:08 -0700</lastBuildDate><atom:link href="audryhsu.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>The revolution will be complete when the language is perfect</title>
-      <link>audryhsu.com/posts/language-perfect/</link>
-      <pubDate>Wed, 07 Aug 2019 00:00:00 +0000</pubDate>
+      <title>How to Hugo</title>
+      <link>audryhsu.com/posts/how-to-hugo/</link>
+      <pubDate>Sat, 21 Oct 2023 17:15:08 -0700</pubDate>
       
-      <guid>audryhsu.com/posts/language-perfect/</guid>
-      <description>He moved over to the window Since about that time, war had been literally continuous, though strictly speaking it had not always been the same war. For several months during his childhood there had been confused street fighting in London itself, some of which he remembered vividly.
-Inside the flat a fruity voice was reading out a list of figures which had something to do with the production of pig iron.</description>
-    </item>
-    
-    <item>
-      <title>Sanity is not statistical</title>
-      <link>audryhsu.com/posts/sanity-not-statistical/</link>
-      <pubDate>Sat, 29 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>audryhsu.com/posts/sanity-not-statistical/</guid>
-      <description>There was no way of knowing whose version would finally be adopted Once again he glanced at his rival in the opposite cubicle. Something seemed to tell him with certainty that Tillotson was busy on the same job as himself. There was no way of knowing whose version would finally be adopted, but he felt a profound conviction that it would be his own
-Mare torrentur Mare torrentur tenuerunt Iovemque crudelis erat non manuque nullaque Pyreneus, evocet pectus, nube.</description>
-    </item>
-    
-    <item>
-      <title>It&#39;s a beautiful thing, the destruction of words</title>
-      <link>audryhsu.com/posts/destruction-of-words/</link>
-      <pubDate>Tue, 30 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>audryhsu.com/posts/destruction-of-words/</guid>
-      <description>He moved over to the window Lorem markdownum comes; pro est modo famulus, quo quod neu manibus aether his nomine, Aurora, voce. Ipse virga res vidit profanis vocatos, quod vestigia cineres, dum silva in vapor. Tendite caelestibus quam, sub inplet prole eveniet superi rus proles venenis potestas Tereo pluribus sunto.
-Perque cessisse, hoc tum auras sinuosa. Pressant nec vinci primoque quoque funibus est: et tempore vetitorum? Coercet tantum adsensibus religata protinus venturas et Achilli, nat iam cum deque.</description>
-    </item>
-    
-    <item>
-      <title>Who controls the past controls the future. Who controls the present controls the past</title>
-      <link>audryhsu.com/posts/controls-the-past/</link>
-      <pubDate>Thu, 07 Jun 2018 00:00:00 +0000</pubDate>
-      
-      <guid>audryhsu.com/posts/controls-the-past/</guid>
-      <description>He moved over to the window Since about that time, war had been literally continuous, though strictly speaking it had not always been the same war. For several months during his childhood there had been confused street fighting in London itself, some of which he remembered vividly.
-Inside the flat a fruity voice was reading out a list of figures which had something to do with the production of pig iron.</description>
+      <guid>audryhsu.com/posts/how-to-hugo/</guid>
+      <description>Overview of Hugo site folder structure my-site/ ├── archetypes/ &amp;lt;-- templates for new content │ └── default.md ├── assets/ ├── content/ │ └── posts/ │ └── _index.md │ └── first-post.md │ └── quotes/ ├── data/ &amp;lt;-- data files e.g. JSON ├── i18n/ ├── layouts/ ├── public/ &amp;lt;-- created when you build your site ├── resources/ &amp;lt;-- created when you build your site ├── static/ |── themes/ &amp;lt;-- downloaded prebuild templates (git submodule) └── hugo.</description>
     </item>
     
     <item>
@@ -53,8 +22,9 @@ Inside the flat a fruity voice was reading out a list of figures which had somet
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>audryhsu.com/pages/about/</guid>
-      <description>Contra vagos Lorem markdownum notam si lintea meque certa en meumque illis, diu fatigant, nec praedae concustodita arcet. Paviunt castris cur errat ventis causa! Silvas sine satis vocat praedam moverat, precor, non sola bovis neque mihi. Primum utilis nympham, et certus amplexas Deiphobum palmis credas ambo, nec.
-Excidit gente, si orat suo quaeque dura Calydon nata? Pars auro post stetit adfusique imis amplexus. Agmina per fabricator mittere Erymanthon habetque tot.</description>
+      <description>I&amp;rsquo;m Audry👋
+Here&amp;rsquo;s a little bit about me:
+💻 I&amp;rsquo;m a software engineer at Ookla, where I help build products that turn billions of real-time data points into global network intelligence and insights. 🐧 I created Fána, an open-source feature flagging platform specializing in audience-targeting to help developers test new features in production. 🌱 I&amp;rsquo;m always on the lookout for ways that I can create new things and have fun while doing it 📈 Formerly a data management consultant helping clients manage their regulatory data &amp;amp; modernize their legal operations.</description>
     </item>
     
   </channel>
