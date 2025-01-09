@@ -1,4 +1,4 @@
-This is the repository for my personal blog generated with Hugo.
+This is repository uses Hugo to generate my [personal blog](https://www.audryhsu.com/blog/).
 ## Development Workflow
 ```yaml
 # start development server with file watcher
